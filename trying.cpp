@@ -1,0 +1,37 @@
+#include<iostream>
+using namespace std;
+
+void printArray(string s, int n){
+    for(int i=0; i<n; i++){
+        cout<<s[i];
+    }
+}
+
+void sortOne(string s, int n){
+   // printArray(arr, 8);
+    int left =0 , right = n-1;
+    while(left < right){
+        while(s[left] = 0 && left<right){
+            left++;
+        }
+    }
+        while(s[right] = 0 && left<right){
+            right--;
+        }
+
+        if(left<right){
+            swap(s[left], s[right]);
+            left++;
+            right--;
+        }
+    }
+
+
+int main(){
+    
+
+   sortOne("01100", 5);
+   printArray("01100", 5); 
+
+    return 0;
+}
