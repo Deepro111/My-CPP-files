@@ -7,20 +7,13 @@ void printArray(int arr[], int n){
 }
 
 void sortArray(int arr[], int n){
-    int left = 0, right = n-1;
+    int c1 = 0, c2 = 0, c3 = 0;
 
-    while(left<right){
-        if(arr[left] == 0 && left<right){
-             left++;
-        }
-        if(arr[right] == 2 && left<right){
-            right--;
-        }
-
-    } 
-      if(left<right && arr[left]!=0 || arr[right]!=2){
-        arr[left] =1;
-      }
+    for(int i=0; i<n; i++){
+       if(arr[i] == 0) c1++;
+       if(arr[i] == 1) c2++;
+       if(arr[i] == 2) c3++;
+    }
 }
 
 int main(){

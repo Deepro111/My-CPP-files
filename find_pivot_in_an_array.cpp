@@ -9,22 +9,22 @@ int getpivot(int arr[], int n){
 
     while(s<e){
 
-        if(arr[mid] >= arr[0]){
-            s = mid+1;
+        if(arr[mid] >= arr[0]){ // Here if our arr[mid] will be greater than or equal to arr[0]
+            s = mid+1;         //then we will shift our start to mid+1 to go to another line which has pivot element
         }
         else{
-            e = mid;
+            e = mid;  //if above condition is not true then we will shift our end to mid and not to "mid-1" to keep us on the line that contain pivot element
         }
         mid = s + (e-s)/2;
     }
-    return e;
+    return s;   // Here we can also return s
 }
 
 int main(){
 
-    int arr[5] = {3, 8, 10, 17, 1};
+    int arr[4] = {11,13,15,17};
 
-    cout<<"Pivot element is at index "<<getpivot(arr, 5)<<endl;
+    cout<<"Pivot element is at index "<<getpivot(arr, 4)<<endl;
     
     return 0;
 }

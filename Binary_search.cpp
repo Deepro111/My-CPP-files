@@ -15,7 +15,7 @@ int binarysearch(int arr[], int n, int key)
             return mid; // we will simply return from here only
         }
 
-        // Another possible conditions if we didn't find our match in above condition only
+        // Another possible conditions if we didn't find our match in above condition
 
         if (key > arr[mid])
         {

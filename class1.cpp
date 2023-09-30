@@ -20,20 +20,26 @@ class student{
 class Exam : public student{
     float marks;
     public:
-    void getmarks(int a){
+    int getmarks(int a){
         marks = a;
+        return marks;
     }
 };
+
+void student :: getdata(){
+    Exam e;
+    int marks = e.getmarks(87);
+    cout<<name <<" is having Roll number "<<roll_num<< " have got "<< marks <<" marks";
+}
 
 
 int main(){
     student std;
+    Exam e;
 
     std.setdata(3);
     std.getname("Deepak");
     std.getdata();
 
-    
-    
     return 0;
 }
