@@ -43,6 +43,7 @@ using namespace std;
 int main(){
 
     int arr1[3][2] = {{2,6}, {3,11}, {1,0}}; // This is comment for feature1
+    int arr1[3][2] = {{2,6}, {3,11}, {1,0}}; // This is arrau 1 declaration
     int arr2[2][3] = {{5,1,7}, {1,4,9}};
     int arr3[3][3] = {0};
 
